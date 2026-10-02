@@ -22,7 +22,7 @@
 <body>
 
 <header class="site-header">
-    <div class="container nav-container">
+    <div class="header-container">
 
         <a href="index.html" class="logo">
             GRIPWORKS GOLF
@@ -43,28 +43,35 @@
 
 <main>
 
-<section class="page-hero">
-    <div class="container">
+    <!-- BOOKING HERO -->
+    <section class="booking-page-hero">
 
-        <p class="eyebrow">MOBILE GOLF CLUB SERVICE</p>
+        <div class="booking-page-container">
 
-        <h1>BOOK YOUR REGRIP</h1>
+            <p class="eyebrow">
+                MOBILE GOLF CLUB SERVICE
+            </p>
 
-        <p>
-            Tell us about your clubs and we'll get your regrip started.
-        </p>
+            <h1>
+                BOOK YOUR REGRIP
+            </h1>
 
-    </div>
-</section>
+            <p>
+                Tell us about your clubs and we'll get your regrip started.
+            </p>
+
+        </div>
+
+    </section>
 
 
-<section class="booking-section">
+    <!-- BOOKING FORM -->
+    <section class="booking-page-section">
 
-    <div class="container">
-
-        <div class="booking-card">
+        <div class="booking-page-container">
 
             <form
+                class="booking-form"
                 id="bookingForm"
                 method="POST"
             >
@@ -92,9 +99,22 @@
                 >
 
 
-                <div class="form-section">
+                <!-- CUSTOMER INFORMATION -->
 
-                    <h2>Customer Information</h2>
+                <div class="booking-form-heading">
+
+                    <p class="eyebrow">
+                        01
+                    </p>
+
+                    <h2>
+                        Customer Information
+                    </h2>
+
+                </div>
+
+
+                <div class="form-row">
 
                     <div class="form-group">
 
@@ -129,29 +149,42 @@
 
                     </div>
 
+                </div>
 
-                    <div class="form-group">
 
-                        <label for="email">
-                            Email Address
-                        </label>
+                <div class="form-group">
 
-                        <input
-                            type="email"
-                            id="email"
-                            name="Email Address"
-                            placeholder="you@example.com"
-                            required
-                        >
+                    <label for="email">
+                        Email Address
+                    </label>
 
-                    </div>
+                    <input
+                        type="email"
+                        id="email"
+                        name="Email Address"
+                        placeholder="you@example.com"
+                        required
+                    >
 
                 </div>
 
 
-                <div class="form-section">
+                <!-- CLUB INFORMATION -->
 
-                    <h2>Club Information</h2>
+                <div class="booking-form-heading">
+
+                    <p class="eyebrow">
+                        02
+                    </p>
+
+                    <h2>
+                        Club Information
+                    </h2>
+
+                </div>
+
+
+                <div class="form-row">
 
                     <div class="form-group">
 
@@ -190,23 +223,6 @@
                             </option>
 
                         </select>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="grip">
-                            Grip Model
-                        </label>
-
-                        <input
-                            type="text"
-                            id="grip"
-                            name="Grip Model"
-                            placeholder="Enter grip model"
-                            required
-                        >
 
                     </div>
 
@@ -254,26 +270,56 @@
                 </div>
 
 
-                <div class="form-section">
+                <div class="form-group">
 
-                    <h2>Appointment Details</h2>
+                    <label for="grip">
+                        Grip Model
+                    </label>
 
-                    <div class="form-group">
+                    <input
+                        type="text"
+                        id="grip"
+                        name="Grip Model"
+                        placeholder="Enter grip model"
+                        required
+                    >
 
-                        <label for="location">
-                            Service Location
-                        </label>
+                </div>
 
-                        <input
-                            type="text"
-                            id="location"
-                            name="Service Location"
-                            placeholder="City / area"
-                            required
-                        >
 
-                    </div>
+                <!-- APPOINTMENT DETAILS -->
 
+                <div class="booking-form-heading">
+
+                    <p class="eyebrow">
+                        03
+                    </p>
+
+                    <h2>
+                        Appointment Details
+                    </h2>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="location">
+                        Service Location
+                    </label>
+
+                    <input
+                        type="text"
+                        id="location"
+                        name="Service Location"
+                        placeholder="City / area"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-row">
 
                     <div class="form-group">
 
@@ -323,28 +369,32 @@
 
                     </div>
 
+                </div>
 
-                    <div class="form-group">
 
-                        <label for="details">
-                            Additional Details
-                        </label>
+                <div class="form-group">
 
-                        <textarea
-                            id="details"
-                            name="Additional Details"
-                            rows="5"
-                            placeholder="Anything else we should know?"
-                        ></textarea>
+                    <label for="details">
+                        Additional Details
+                    </label>
 
-                    </div>
+                    <textarea
+                        id="details"
+                        name="Additional Details"
+                        rows="5"
+                        placeholder="Anything else we should know?"
+                    ></textarea>
 
                 </div>
 
 
-                <div class="booking-notice">
+                <!-- NOTICE -->
 
-                    <strong>Before You Submit</strong>
+                <div class="booking-order-notice">
+
+                    <strong>
+                        Before You Submit
+                    </strong>
 
                     <p>
                         Grips are ordered specifically for each customer
@@ -361,9 +411,11 @@
                 </div>
 
 
+                <!-- SUBMIT -->
+
                 <button
                     type="submit"
-                    class="button"
+                    class="booking-submit"
                     id="submitButton"
                 >
                     SUBMIT BOOKING REQUEST
@@ -375,39 +427,50 @@
                     style="display:none; margin-top:20px;"
                 ></div>
 
-            </form>
+
+                <p class="booking-note">
+                    Your booking request will be sent directly to
+                    GripWorks Golf. You do not need to open your email app.
+                </p>
 
 
-            <div class="booking-back">
-
-                <a href="index.html">
+                <a
+                    href="index.html"
+                    class="back-home-button"
+                >
                     ← Back to Main Page
                 </a>
 
-            </div>
+            </form>
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 </main>
 
 
+<!-- FOOTER -->
+
 <footer class="site-footer">
 
-    <div class="container">
+    <div class="footer-container">
 
         <div>
-            <strong>GRIPWORKS GOLF</strong>
+
+            <strong>
+                GRIPWORKS GOLF
+            </strong>
 
             <p>
                 Golf Service. Brought to You.
             </p>
+
         </div>
 
+
         <div>
+
             <p>
                 Serving Upstate South Carolina
             </p>
@@ -415,12 +478,15 @@
             <p>
                 © 2026 GripWorks Golf
             </p>
+
         </div>
 
     </div>
 
 </footer>
 
+
+<!-- FORM SUBMISSION -->
 
 <script>
 
@@ -465,7 +531,10 @@ form.addEventListener("submit", async function(event) {
             submitButton.textContent = "REQUEST SENT";
 
             if (typeof gtag === "function") {
-                gtag("event", "booking_request_submitted");
+                gtag(
+                    "event",
+                    "booking_request_submitted"
+                );
             }
 
         } else {
@@ -474,7 +543,8 @@ form.addEventListener("submit", async function(event) {
                 "Something went wrong while sending your request. Please try again.";
 
             submitButton.disabled = false;
-            submitButton.textContent = "SUBMIT BOOKING REQUEST";
+            submitButton.textContent =
+                "SUBMIT BOOKING REQUEST";
 
         }
 
@@ -486,7 +556,8 @@ form.addEventListener("submit", async function(event) {
             "Unable to send your request right now. Please check your connection and try again.";
 
         submitButton.disabled = false;
-        submitButton.textContent = "SUBMIT BOOKING REQUEST";
+        submitButton.textContent =
+            "SUBMIT BOOKING REQUEST";
 
     }
 
