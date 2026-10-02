@@ -1,0 +1,681 @@
+\<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Book a Regrip | GripWorks Golf</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <a href="index.html" class="logo">
+            GRIPWORKS GOLF
+        </a>
+
+
+        <nav class="nav">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#services">
+                Services
+            </a>
+
+            <a href="pricing.html">
+                Pricing
+            </a>
+
+            <a href="index.html#how-it-works">
+                How It Works
+            </a>
+
+            <a href="index.html#about">
+                About
+            </a>
+
+            <a
+                href="booking.html"
+                class="nav-button"
+            >
+                Book Now
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =========================================
+     BOOKING HERO
+========================================= -->
+
+<section class="booking-page-hero">
+
+    <div class="booking-page-container">
+
+        <p class="eyebrow">
+            MOBILE GOLF CLUB SERVICE
+        </p>
+
+        <h1>
+            BOOK YOUR REGRIP
+        </h1>
+
+        <p>
+            Professional golf club service brought directly
+            to you. Tell us what you need and we'll order
+            your grips and contact you to confirm your
+            appointment.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     BOOKING FORM
+========================================= -->
+
+<section class="booking-page-section">
+
+    <div class="booking-page-container">
+
+        <form
+            class="booking-form"
+            id="bookingForm"
+        >
+
+
+            <!-- =====================================
+                 CUSTOMER INFORMATION
+            ====================================== -->
+
+            <div class="booking-form-heading">
+
+                <p class="eyebrow">
+                    01
+                </p>
+
+                <h2>
+                    Customer Information
+                </h2>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="name">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="Full Name"
+                    placeholder="Your full name"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-row">
+
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="Phone Number"
+                        placeholder="(864) 555-1234"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="Email"
+                        placeholder="you@example.com"
+                        required
+                    >
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =====================================
+                 CLUB DETAILS
+            ====================================== -->
+
+            <div class="booking-form-heading">
+
+                <p class="eyebrow">
+                    02
+                </p>
+
+                <h2>
+                    Club Details
+                </h2>
+
+            </div>
+
+
+            <div class="form-row">
+
+
+                <div class="form-group">
+
+                    <label for="clubs">
+                        Number of Clubs
+                    </label>
+
+                    <select
+                        id="clubs"
+                        name="Number of Clubs"
+                        required
+                    >
+
+                        <option value="">
+                            Select
+                        </option>
+
+                        <option value="1 Club">
+                            1 Club
+                        </option>
+
+                        <option value="2-4 Clubs">
+                            2-4 Clubs
+                        </option>
+
+                        <option value="5-9 Clubs">
+                            5-9 Clubs
+                        </option>
+
+                        <option value="10-13 Clubs">
+                            10-13 Clubs
+                        </option>
+
+                        <option value="14 Clubs">
+                            14 Clubs
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="grip">
+                        Grip
+                    </label>
+
+                    <input
+                        type="text"
+                        id="grip"
+                        name="Grip"
+                        placeholder="Enter grip model"
+                        required
+                    >
+
+                </div>
+
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="grip-size">
+                    Grip Size
+                </label>
+
+                <select
+                    id="grip-size"
+                    name="Grip Size"
+                    required
+                >
+
+                    <option value="">
+                        Select a Size
+                    </option>
+
+                    <option value="Undersize">
+                        Undersize
+                    </option>
+
+                    <option value="Standard">
+                        Standard
+                    </option>
+
+                    <option value="Midsize">
+                        Midsize
+                    </option>
+
+                    <option value="Jumbo">
+                        Jumbo
+                    </option>
+
+                    <option value="Not Sure">
+                        I'm Not Sure
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 APPOINTMENT DETAILS
+            ====================================== -->
+
+            <div class="booking-form-heading">
+
+                <p class="eyebrow">
+                    03
+                </p>
+
+                <h2>
+                    Appointment Details
+                </h2>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="location">
+                    Service Location
+                </label>
+
+                <input
+                    type="text"
+                    id="location"
+                    name="Service Location"
+                    placeholder="Address or general area"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-row">
+
+
+                <div class="form-group">
+
+                    <label for="date">
+                        Preferred Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="date"
+                        name="Preferred Date"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="time">
+                        Preferred Time
+                    </label>
+
+                    <select
+                        id="time"
+                        name="Preferred Time"
+                        required
+                    >
+
+                        <option value="">
+                            Select a Time
+                        </option>
+
+                        <option value="Morning">
+                            Morning
+                        </option>
+
+                        <option value="Afternoon">
+                            Afternoon
+                        </option>
+
+                        <option value="Evening">
+                            Evening
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =====================================
+                 ADDITIONAL DETAILS
+            ====================================== -->
+
+            <div class="form-group">
+
+                <label for="details">
+                    Additional Details
+                </label>
+
+                <textarea
+                    id="details"
+                    name="Additional Details"
+                    placeholder="Tell us anything else we should know about your clubs or service."
+                ></textarea>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 GRIP ORDER NOTICE
+            ====================================== -->
+
+            <div class="booking-order-notice">
+
+                <strong>
+                    Important:
+                </strong>
+
+                Grips are ordered specifically for your
+                booking after your request is submitted.
+
+                Please make sure your grip selection,
+                size, and number of clubs are correct.
+
+                Your appointment is not confirmed until
+                GripWorks Golf contacts you.
+
+            </div>
+
+
+
+            <!-- =====================================
+                 SUBMIT
+            ====================================== -->
+
+            <button
+                type="submit"
+                class="booking-submit"
+            >
+                Submit Booking Request
+            </button>
+
+
+
+            <!-- =====================================
+                 BACK HOME
+            ====================================== -->
+
+            <a
+                href="index.html"
+                class="back-home-button"
+            >
+                Back to Main Page
+            </a>
+
+
+            <p class="booking-note">
+
+                Submitting this form will open your email
+                app with your booking information ready
+                to send to GripWorks Golf.
+
+            </p>
+
+
+        </form>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+
+        <div>
+
+            <strong>
+                GRIPWORKS GOLF
+            </strong>
+
+            <p>
+                Golf Service. Brought to You.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <p>
+                Serving the Upstate of South Carolina
+            </p>
+
+            <p>
+                © 2026 GripWorks Golf
+            </p>
+
+        </div>
+
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================
+     BOOKING EMAIL SCRIPT
+========================================= -->
+
+<script>
+
+document
+    .getElementById("bookingForm")
+    .addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+
+        const form = this;
+
+
+        const name =
+            form.querySelector(
+                '[name="Full Name"]'
+            ).value;
+
+
+        const phone =
+            form.querySelector(
+                '[name="Phone Number"]'
+            ).value;
+
+
+        const email =
+            form.querySelector(
+                '[name="Email"]'
+            ).value;
+
+
+        const clubs =
+            form.querySelector(
+                '[name="Number of Clubs"]'
+            ).value;
+
+
+        const grip =
+            form.querySelector(
+                '[name="Grip"]'
+            ).value;
+
+
+        const gripSize =
+            form.querySelector(
+                '[name="Grip Size"]'
+            ).value;
+
+
+        const location =
+            form.querySelector(
+                '[name="Service Location"]'
+            ).value;
+
+
+        const date =
+            form.querySelector(
+                '[name="Preferred Date"]'
+            ).value;
+
+
+        const time =
+            form.querySelector(
+                '[name="Preferred Time"]'
+            ).value;
+
+
+        const details =
+            form.querySelector(
+                '[name="Additional Details"]'
+            ).value;
+
+
+
+        const subject =
+            "New GripWorks Golf Booking Request";
+
+
+
+        const body =
+
+`NEW GRIPWORKS GOLF BOOKING
+
+CUSTOMER INFORMATION
+--------------------
+Name: ${name}
+Phone: ${phone}
+Email: ${email}
+
+CLUB DETAILS
+--------------------
+Number of Clubs: ${clubs}
+Grip: ${grip}
+Grip Size: ${gripSize}
+
+APPOINTMENT DETAILS
+--------------------
+Service Location: ${location}
+Preferred Date: ${date}
+Preferred Time: ${time}
+
+ADDITIONAL DETAILS
+--------------------
+${details}
+
+IMPORTANT
+--------------------
+Grips will be ordered specifically for this customer
+after the booking request is submitted.
+
+The appointment is not confirmed until
+GripWorks Golf contacts the customer.
+
+--------------------------------
+GRIPWORKS GOLF
+Golf Service. Brought to You.
+`;
+
+
+
+        const mailto =
+
+            "mailto:golfgripworks@gmail.com" +
+
+            "?subject=" +
+
+            encodeURIComponent(subject) +
+
+            "&body=" +
+
+            encodeURIComponent(body);
+
+
+
+        window.location.href = mailto;
+
+    });
+
+</script>
+
+
+</body>
+
+</html>
