@@ -1,497 +1,394 @@
-\<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JVCJ8J1XW5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JVCJ8J1XW5');
-</script>
-
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Book a Regrip | GripWorks Golf</title>
 
     <link rel="stylesheet" href="style.css">
 
-</head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JVCJ8J1XW5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'G-JVCJ8J1XW5');
+    </script>
+</head>
 
 <body>
 
-
-<!-- =========================================
-     HEADER
-========================================= -->
-
 <header class="site-header">
-
-    <div class="header-container">
+    <div class="container nav-container">
 
         <a href="index.html" class="logo">
             GRIPWORKS GOLF
         </a>
 
-
         <nav class="nav">
-
-            <a href="index.html">
-                Home
-            </a>
-
-            <a href="index.html#services">
-                Services
-            </a>
-
-            <a href="pricing.html">
-                Pricing
-            </a>
-
-            <a href="index.html#how-it-works">
-                How It Works
-            </a>
-
-            <a href="index.html#about">
-                About
-            </a>
-
-            <a
-                href="booking.html"
-                class="nav-button"
-            >
-                Book Now
-            </a>
-
+            <a href="index.html">Home</a>
+            <a href="index.html#services">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="index.html#how-it-works">How It Works</a>
+            <a href="index.html#about">About</a>
+            <a href="booking.html" class="nav-button">Book Now</a>
         </nav>
 
     </div>
-
 </header>
-
 
 
 <main>
 
+<section class="page-hero">
+    <div class="container">
 
-<!-- =========================================
-     BOOKING HERO
-========================================= -->
+        <p class="eyebrow">MOBILE GOLF CLUB SERVICE</p>
 
-<section class="booking-page-hero">
-
-    <div class="booking-page-container">
-
-        <p class="eyebrow">
-            MOBILE GOLF CLUB SERVICE
-        </p>
-
-        <h1>
-            BOOK YOUR REGRIP
-        </h1>
+        <h1>BOOK YOUR REGRIP</h1>
 
         <p>
-            Professional golf club service brought directly
-            to you. Tell us what you need and we'll order
-            your grips and contact you to confirm your
-            appointment.
+            Tell us about your clubs and we'll get your regrip started.
         </p>
 
     </div>
-
 </section>
 
 
+<section class="booking-section">
 
-<!-- =========================================
-     BOOKING FORM
-========================================= -->
+    <div class="container">
 
-<section class="booking-page-section">
+        <div class="booking-card">
 
-    <div class="booking-page-container">
-
-        <form
-            class="booking-form"
-            id="bookingForm"
-        >
-
-
-            <!-- =====================================
-                 CUSTOMER INFORMATION
-            ====================================== -->
-
-            <div class="booking-form-heading">
-
-                <p class="eyebrow">
-                    01
-                </p>
-
-                <h2>
-                    Customer Information
-                </h2>
-
-            </div>
-
-
-            <div class="form-group">
-
-                <label for="name">
-                    Full Name
-                </label>
-
-                <input
-                    type="text"
-                    id="name"
-                    name="Full Name"
-                    placeholder="Your full name"
-                    required
-                >
-
-            </div>
-
-
-            <div class="form-row">
-
-
-                <div class="form-group">
-
-                    <label for="phone">
-                        Phone Number
-                    </label>
-
-                    <input
-                        type="tel"
-                        id="phone"
-                        name="Phone Number"
-                        placeholder="(864) 555-1234"
-                        required
-                    >
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="email">
-                        Email Address
-                    </label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="Email"
-                        placeholder="you@example.com"
-                        required
-                    >
-
-                </div>
-
-
-            </div>
-
-
-
-            <!-- =====================================
-                 CLUB DETAILS
-            ====================================== -->
-
-            <div class="booking-form-heading">
-
-                <p class="eyebrow">
-                    02
-                </p>
-
-                <h2>
-                    Club Details
-                </h2>
-
-            </div>
-
-
-            <div class="form-row">
-
-
-                <div class="form-group">
-
-                    <label for="clubs">
-                        Number of Clubs
-                    </label>
-
-                    <select
-                        id="clubs"
-                        name="Number of Clubs"
-                        required
-                    >
-
-                        <option value="">
-                            Select
-                        </option>
-
-                        <option value="1 Club">
-                            1 Club
-                        </option>
-
-                        <option value="2-4 Clubs">
-                            2-4 Clubs
-                        </option>
-
-                        <option value="5-9 Clubs">
-                            5-9 Clubs
-                        </option>
-
-                        <option value="10-13 Clubs">
-                            10-13 Clubs
-                        </option>
-
-                        <option value="14 Clubs">
-                            14 Clubs
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="grip">
-                        Grip
-                    </label>
-
-                    <input
-                        type="text"
-                        id="grip"
-                        name="Grip"
-                        placeholder="Enter grip model"
-                        required
-                    >
-
-                </div>
-
-
-            </div>
-
-
-            <div class="form-group">
-
-                <label for="grip-size">
-                    Grip Size
-                </label>
-
-                <select
-                    id="grip-size"
-                    name="Grip Size"
-                    required
-                >
-
-                    <option value="">
-                        Select a Size
-                    </option>
-
-                    <option value="Undersize">
-                        Undersize
-                    </option>
-
-                    <option value="Standard">
-                        Standard
-                    </option>
-
-                    <option value="Midsize">
-                        Midsize
-                    </option>
-
-                    <option value="Jumbo">
-                        Jumbo
-                    </option>
-
-                    <option value="Not Sure">
-                        I'm Not Sure
-                    </option>
-
-                </select>
-
-            </div>
-
-
-
-            <!-- =====================================
-                 APPOINTMENT DETAILS
-            ====================================== -->
-
-            <div class="booking-form-heading">
-
-                <p class="eyebrow">
-                    03
-                </p>
-
-                <h2>
-                    Appointment Details
-                </h2>
-
-            </div>
-
-
-            <div class="form-group">
-
-                <label for="location">
-                    Service Location
-                </label>
-
-                <input
-                    type="text"
-                    id="location"
-                    name="Service Location"
-                    placeholder="Address or general area"
-                    required
-                >
-
-            </div>
-
-
-            <div class="form-row">
-
-
-                <div class="form-group">
-
-                    <label for="date">
-                        Preferred Date
-                    </label>
-
-                    <input
-                        type="date"
-                        id="date"
-                        name="Preferred Date"
-                        required
-                    >
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="time">
-                        Preferred Time
-                    </label>
-
-                    <select
-                        id="time"
-                        name="Preferred Time"
-                        required
-                    >
-
-                        <option value="">
-                            Select a Time
-                        </option>
-
-                        <option value="Morning">
-                            Morning
-                        </option>
-
-                        <option value="Afternoon">
-                            Afternoon
-                        </option>
-
-                        <option value="Evening">
-                            Evening
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-            </div>
-
-
-
-            <!-- =====================================
-                 ADDITIONAL DETAILS
-            ====================================== -->
-
-            <div class="form-group">
-
-                <label for="details">
-                    Additional Details
-                </label>
-
-                <textarea
-                    id="details"
-                    name="Additional Details"
-                    placeholder="Tell us anything else we should know about your clubs or service."
-                ></textarea>
-
-            </div>
-
-
-
-            <!-- =====================================
-                 GRIP ORDER NOTICE
-            ====================================== -->
-
-            <div class="booking-order-notice">
-
-                <strong>
-                    Important:
-                </strong>
-
-                Grips are ordered specifically for your
-                booking after your request is submitted.
-
-                Please make sure your grip selection,
-                size, and number of clubs are correct.
-
-                Your appointment is not confirmed until
-                GripWorks Golf contacts you.
-
-            </div>
-
-
-
-            <!-- =====================================
-                 SUBMIT
-            ====================================== -->
-
-            <button
-                type="submit"
-                class="booking-submit"
+            <form
+                action="https://api.web3forms.com/submit"
+                method="POST"
+                id="bookingForm"
             >
-                Submit Booking Request
-            </button>
+
+                <!-- Web3Forms Access Key -->
+                <input
+                    type="hidden"
+                    name="access_key"
+                    value="f2f1985f-ee79-4e83-8049-58566027cfee"
+                >
+
+                <!-- Email subject -->
+                <input
+                    type="hidden"
+                    name="subject"
+                    value="New GripWorks Golf Booking Request"
+                >
+
+                <!-- Spam protection -->
+                <input
+                    type="checkbox"
+                    name="botcheck"
+                    style="display:none;"
+                    tabindex="-1"
+                    autocomplete="off"
+                >
 
 
+                <div class="form-section">
 
-            <!-- =====================================
-                 BACK HOME
-            ====================================== -->
+                    <h2>Customer Information</h2>
 
-            <a
-                href="index.html"
-                class="back-home-button"
-            >
-                Back to Main Page
-            </a>
+                    <div class="form-group">
 
+                        <label for="name">
+                            Full Name
+                        </label>
 
-            <p class="booking-note">
+                        <input
+                            type="text"
+                            id="name"
+                            name="Full Name"
+                            placeholder="Your full name"
+                            required
+                        >
 
-                Submitting this form will open your email
-                app with your booking information ready
-                to send to GripWorks Golf.
-
-            </p>
+                    </div>
 
 
-        </form>
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="Phone Number"
+                            placeholder="(864) 555-1234"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="Email Address"
+                            placeholder="you@example.com"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-section">
+
+                    <h2>Club Information</h2>
+
+                    <div class="form-group">
+
+                        <label for="clubs">
+                            Number of Clubs
+                        </label>
+
+                        <select
+                            id="clubs"
+                            name="Number of Clubs"
+                            required
+                        >
+
+                            <option value="">
+                                Select number of clubs
+                            </option>
+
+                            <option value="1">
+                                1 Club
+                            </option>
+
+                            <option value="2-4">
+                                2-4 Clubs
+                            </option>
+
+                            <option value="5-9">
+                                5-9 Clubs
+                            </option>
+
+                            <option value="10-13">
+                                10-13 Clubs
+                            </option>
+
+                            <option value="14">
+                                Full Set - 14 Clubs
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="grip">
+                            Grip Model
+                        </label>
+
+                        <input
+                            type="text"
+                            id="grip"
+                            name="Grip Model"
+                            placeholder="Enter grip model"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="grip-size">
+                            Grip Size
+                        </label>
+
+                        <select
+                            id="grip-size"
+                            name="Grip Size"
+                            required
+                        >
+
+                            <option value="">
+                                Select grip size
+                            </option>
+
+                            <option value="Undersize">
+                                Undersize
+                            </option>
+
+                            <option value="Standard">
+                                Standard
+                            </option>
+
+                            <option value="Midsize">
+                                Midsize
+                            </option>
+
+                            <option value="Jumbo">
+                                Jumbo
+                            </option>
+
+                            <option value="Not Sure">
+                                Not Sure
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-section">
+
+                    <h2>Appointment Details</h2>
+
+                    <div class="form-group">
+
+                        <label for="location">
+                            Service Location
+                        </label>
+
+                        <input
+                            type="text"
+                            id="location"
+                            name="Service Location"
+                            placeholder="City / area"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="date">
+                            Preferred Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="date"
+                            name="Preferred Date"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="time">
+                            Preferred Time
+                        </label>
+
+                        <select
+                            id="time"
+                            name="Preferred Time"
+                            required
+                        >
+
+                            <option value="">
+                                Select preferred time
+                            </option>
+
+                            <option value="Morning">
+                                Morning
+                            </option>
+
+                            <option value="Afternoon">
+                                Afternoon
+                            </option>
+
+                            <option value="Evening">
+                                Evening
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="details">
+                            Additional Details
+                        </label>
+
+                        <textarea
+                            id="details"
+                            name="Additional Details"
+                            rows="5"
+                            placeholder="Anything else we should know?"
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <div class="booking-notice">
+
+                    <strong>Before You Submit</strong>
+
+                    <p>
+                        Grips are ordered specifically for each customer
+                        after a booking request is received. Please make
+                        sure your grip selection, size, and number of clubs
+                        are correct.
+                    </p>
+
+                    <p>
+                        Your appointment is not confirmed until GripWorks
+                        Golf contacts you.
+                    </p>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="button"
+                    id="submitButton"
+                >
+                    SUBMIT BOOKING REQUEST
+                </button>
+
+
+                <div
+                    id="formResult"
+                    style="display:none; margin-top:20px;"
+                ></div>
+
+            </form>
+
+
+            <div class="booking-back">
+
+                <a href="index.html">
+                    ← Back to Main Page
+                </a>
+
+            </div>
+
+        </div>
 
     </div>
 
@@ -500,192 +397,104 @@
 </main>
 
 
-
-<!-- =========================================
-     FOOTER
-========================================= -->
-
 <footer class="site-footer">
 
-    <div class="footer-container">
-
+    <div class="container">
 
         <div>
-
-            <strong>
-                GRIPWORKS GOLF
-            </strong>
+            <strong>GRIPWORKS GOLF</strong>
 
             <p>
                 Golf Service. Brought to You.
             </p>
-
         </div>
 
-
         <div>
-
             <p>
-                Serving the Upstate of South Carolina
+                Serving Upstate South Carolina
             </p>
 
             <p>
                 © 2026 GripWorks Golf
             </p>
-
         </div>
-
 
     </div>
 
 </footer>
 
 
-
-<!-- =========================================
-     BOOKING EMAIL SCRIPT
-========================================= -->
-
 <script>
 
-document
-    .getElementById("bookingForm")
-    .addEventListener("submit", function(event) {
+const form = document.getElementById("bookingForm");
+const result = document.getElementById("formResult");
+const submitButton = document.getElementById("submitButton");
 
-        event.preventDefault();
+form.addEventListener("submit", async function(event) {
 
+    event.preventDefault();
 
-        const form = this;
+    submitButton.disabled = true;
+    submitButton.textContent = "SENDING...";
 
+    result.style.display = "block";
+    result.textContent = "Submitting your booking request...";
 
-        const name =
-            form.querySelector(
-                '[name="Full Name"]'
-            ).value;
+    const formData = new FormData(form);
 
+    try {
 
-        const phone =
-            form.querySelector(
-                '[name="Phone Number"]'
-            ).value;
+        const response = await fetch(
+            "https://api.web3forms.com/submit",
+            {
+                method: "POST",
+                headers: {
+                    "Accept": "application/json"
+                },
+                body: formData
+            }
+        );
 
+        const data = await response.json();
 
-        const email =
-            form.querySelector(
-                '[name="Email"]'
-            ).value;
+        if (response.ok && data.success) {
 
+            form.reset();
 
-        const clubs =
-            form.querySelector(
-                '[name="Number of Clubs"]'
-            ).value;
+            result.textContent =
+                "Booking request sent successfully. GripWorks Golf will contact you to confirm your appointment.";
 
+            submitButton.textContent = "REQUEST SENT";
 
-        const grip =
-            form.querySelector(
-                '[name="Grip"]'
-            ).value;
+            if (typeof gtag === "function") {
+                gtag("event", "booking_request_submitted");
+            }
 
+        } else {
 
-        const gripSize =
-            form.querySelector(
-                '[name="Grip Size"]'
-            ).value;
+            result.textContent =
+                "Something went wrong while sending your request. Please try again.";
 
+            submitButton.disabled = false;
+            submitButton.textContent = "SUBMIT BOOKING REQUEST";
 
-        const location =
-            form.querySelector(
-                '[name="Service Location"]'
-            ).value;
+        }
 
+    } catch (error) {
 
-        const date =
-            form.querySelector(
-                '[name="Preferred Date"]'
-            ).value;
+        console.error(error);
 
+        result.textContent =
+            "Unable to send your request right now. Please check your connection and try again.";
 
-        const time =
-            form.querySelector(
-                '[name="Preferred Time"]'
-            ).value;
+        submitButton.disabled = false;
+        submitButton.textContent = "SUBMIT BOOKING REQUEST";
 
+    }
 
-        const details =
-            form.querySelector(
-                '[name="Additional Details"]'
-            ).value;
-
-
-
-        const subject =
-            "New GripWorks Golf Booking Request";
-
-
-
-        const body =
-
-`NEW GRIPWORKS GOLF BOOKING
-
-CUSTOMER INFORMATION
---------------------
-Name: ${name}
-Phone: ${phone}
-Email: ${email}
-
-CLUB DETAILS
---------------------
-Number of Clubs: ${clubs}
-Grip: ${grip}
-Grip Size: ${gripSize}
-
-APPOINTMENT DETAILS
---------------------
-Service Location: ${location}
-Preferred Date: ${date}
-Preferred Time: ${time}
-
-ADDITIONAL DETAILS
---------------------
-${details}
-
-IMPORTANT
---------------------
-Grips will be ordered specifically for this customer
-after the booking request is submitted.
-
-The appointment is not confirmed until
-GripWorks Golf contacts the customer.
-
---------------------------------
-GRIPWORKS GOLF
-Golf Service. Brought to You.
-`;
-
-
-
-        const mailto =
-
-            "mailto:golfgripworks@gmail.com" +
-
-            "?subject=" +
-
-            encodeURIComponent(subject) +
-
-            "&body=" +
-
-            encodeURIComponent(body);
-
-
-
-        window.location.href = mailto;
-
-    });
+});
 
 </script>
 
-
 </body>
-
 </html>
